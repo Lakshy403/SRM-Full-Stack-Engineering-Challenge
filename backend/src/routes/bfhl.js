@@ -4,6 +4,12 @@ const { analyzeHierarchies } = require("../services/hierarchyAnalyzer");
 
 const router = express.Router();
 
+router.get("/", (req, res) => {
+  return res.status(200).json({
+    operation_code: 1
+  });
+});
+
 router.post("/", (req, res) => {
   if (!req.is("application/json")) {
     return res.status(415).json({

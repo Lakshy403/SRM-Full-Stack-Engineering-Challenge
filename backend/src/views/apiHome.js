@@ -162,6 +162,7 @@ function renderApiHome() {
           <ul>
             <li><strong>GET /</strong> - API overview page</li>
             <li><strong>GET /health</strong> - service health check</li>
+            <li><strong>GET /bfhl</strong> - returns operation_code: 1</li>
             <li><strong>POST /bfhl</strong> - process hierarchy data</li>
           </ul>
         </article>
