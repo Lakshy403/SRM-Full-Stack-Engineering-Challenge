@@ -2,37 +2,47 @@
 
 This repository contains a complete full-stack solution for the SRM Full Stack Engineering Challenge.
 
+## Live Deployment
+
+- Frontend: https://frontend-5gd5zce4o-lakshy403s-projects.vercel.app
+- Backend: https://backend-6oujlewvx-lakshy403s-projects.vercel.app
+- API Endpoint: `POST https://backend-6oujlewvx-lakshy403s-projects.vercel.app/bfhl`
+
+### Deployment Note
+
+If Vercel asks for login before opening the app, disable Deployment Protection in both the `frontend` and `backend` Vercel projects so the evaluator can access the app publicly.
+
 ## Folder Structure
 
 ```text
 .
-├── backend
-│   ├── package.json
-│   ├── .env.example
-│   ├── src
-│   │   ├── config
-│   │   │   └── identity.js
-│   │   ├── routes
-│   │   │   └── bfhl.js
-│   │   ├── services
-│   │   │   └── hierarchyAnalyzer.js
-│   │   ├── utils
-│   │   │   └── treeBuilder.js
-│   │   └── server.js
-│   └── tests
-│       └── runExamples.js
-├── frontend
-│   ├── package.json
-│   ├── .env.example
-│   ├── index.html
-│   ├── vite.config.js
-│   └── src
-│       ├── App.jsx
-│       ├── main.jsx
-│       ├── styles.css
-│       └── components
-│           └── TreeNode.jsx
-└── README.md
+|-- backend
+|   |-- package.json
+|   |-- .env.example
+|   |-- src
+|   |   |-- config
+|   |   |   `-- identity.js
+|   |   |-- routes
+|   |   |   `-- bfhl.js
+|   |   |-- services
+|   |   |   `-- hierarchyAnalyzer.js
+|   |   |-- utils
+|   |   |   `-- treeBuilder.js
+|   |   `-- server.js
+|   `-- tests
+|       `-- runExamples.js
+|-- frontend
+|   |-- package.json
+|   |-- .env.example
+|   |-- index.html
+|   |-- vite.config.js
+|   `-- src
+|       |-- App.jsx
+|       |-- main.jsx
+|       |-- styles.css
+|       `-- components
+|           `-- TreeNode.jsx
+`-- README.md
 ```
 
 ## Features
@@ -263,3 +273,4 @@ npm run examples
 - Replace placeholder identity values in `backend/.env`
 - Push this project to a public GitHub repository
 - Add your deployed frontend and backend URLs to the submission form
+- Make sure the deployed frontend and backend are publicly accessible without Vercel login
