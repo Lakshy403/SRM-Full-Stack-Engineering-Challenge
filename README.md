@@ -5,8 +5,8 @@ This repository contains a complete full-stack solution for the SRM Full Stack E
 ## Live Deployment
 
 - Frontend: https://frontend-5gd5zce4o-lakshy403s-projects.vercel.app
-- Backend: https://backend-6oujlewvx-lakshy403s-projects.vercel.app
-- API Endpoint: `POST https://backend-6oujlewvx-lakshy403s-projects.vercel.app/bfhl`
+- Backend: https://backend-lakshy403s-projects.vercel.app
+- API Endpoint: `POST https://backend-lakshy403s-projects.vercel.app/bfhl`
 
 ### Deployment Note
 
@@ -18,7 +18,6 @@ If Vercel asks for login before opening the app, disable Deployment Protection i
 .
 |-- backend
 |   |-- package.json
-|   |-- .env.example
 |   |-- src
 |   |   |-- config
 |   |   |   `-- identity.js
@@ -33,7 +32,6 @@ If Vercel asks for login before opening the app, disable Deployment Protection i
 |       `-- runExamples.js
 |-- frontend
 |   |-- package.json
-|   |-- .env.example
 |   |-- index.html
 |   |-- vite.config.js
 |   `-- src
@@ -157,11 +155,10 @@ The backend marks an entry as invalid if it:
 ```bash
 cd backend
 npm install
-copy .env.example .env
 npm run dev
 ```
 
-Update `.env` with your own:
+Create a `.env` file inside `backend` with your own:
 
 - `FULL_NAME`
 - `DOB_DDMMYYYY`
@@ -174,11 +171,10 @@ Update `.env` with your own:
 ```bash
 cd frontend
 npm install
-copy .env.example .env
 npm run dev
 ```
 
-Set `VITE_API_BASE_URL` inside `frontend/.env`, for example:
+Create a `frontend/.env` file and set `VITE_API_BASE_URL`, for example:
 
 ```env
 VITE_API_BASE_URL=http://localhost:3000
